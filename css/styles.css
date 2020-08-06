@@ -5,8 +5,14 @@ body {
     color: #2e354f;
 }
 
-img {
-    width: 100%;
+.section-one {
+    /* font-size: 20px; */
+}
+
+
+ul {
+    /* 1.5em = 150% */
+    font-size: 1.25em;
 }
 
 h1,
@@ -18,11 +24,11 @@ strong {
 /* Typography */
 
 h1 {
-    font-size: 36px;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.8em;
     color: #ef5839;
 }
 
