@@ -39,6 +39,7 @@ p {
     background-position: center;    
     padding: 3.5em;    
     margin-bottom: .5em;
+    min-width: 195px;
 }
 
 .columns {
