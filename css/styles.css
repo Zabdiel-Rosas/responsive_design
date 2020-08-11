@@ -12,25 +12,33 @@ h1 {
     margin: 0;
 }
 
-
-.site-title {
-    margin: 0 auto;    
-    width: 700px;
-} 
-
 .subtitle {
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
     font-size: .75rem;
-    color: #1792d2;    
-    /* margin: 0; */
+    color: #1792d2;       
+    margin: 0; 
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;    
+    margin: 0 auto;    
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
-    background: #f8f8f8;
-    text-align: center;
-    padding: 2em 0;
+    background: #f5f3f3;
+    padding: 2em 0;    
 }
+
+/* Navigation */
 
 nav ul {
     list-style: none;
@@ -41,17 +49,42 @@ nav ul {
 }
 
 nav li {
-    margin: 0 1em;     
+    margin-left: 2em;   
+}
+
+@media (max-width: 675px) {
+    .container-nav,
+    nav ul {
+        flex-direction: column;        
+    }
+
+    header {
+        text-align: center;        
+    }
+
+    nav li {
+        margin: .5em 0;
+        padding: 0;        
+    }
 }
 
 nav a {
     text-decoration: none;
-    font-family: Ubuntu;
-    font-size: 1rem;
+    font-family: Ubuntu;    
     font-weight: 700;
     color: #707070;
+    padding: .25em 0;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
 }
